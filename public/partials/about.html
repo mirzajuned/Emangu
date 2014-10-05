@@ -1,0 +1,32 @@
+<section>
+<br><br><br><br>
+<div class="container-fluid ">
+<br><br><br>
+  
+        <div class="row">
+            <div ng-controller = "homeControllers">
+            <Amy ng-repeat= "item in bloggerProfile" > 
+        	<div class="col-md-1">
+        	</div>
+        	<div class="col-md-10 back">
+
+        		<div class="col-md-7">
+                <p class="space"></p>
+
+        		<p style="font-size: 50px; ">About me:</p>
+                <p>
+                    {{item.about}}
+				</p>      	
+        		</div>
+	            <div class="col-md-5">
+	            	<img src={{item.profile_photo}} width="100%" />
+	            </div>
+        		</Amy>
+            </div>
+            <div class="col-md-1">
+        	</div>
+            </div>
+         </div>
+</div>
+<br><br><br><br><br><br><br><br><br>
+</section>

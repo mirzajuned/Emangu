@@ -39,7 +39,11 @@ GEM
     angular-ui-bootstrap-rails (0.11.0)
     angularjs-rails (1.2.22)
     arel (5.0.1.20140414130214)
+    autoprefixer-rails (3.1.0.20140911)
+      execjs
     bcrypt (3.1.7)
+    bootstrap-sass (3.2.0.2)
+      sass (~> 3.2)
     builder (3.2.2)
     carrierwave (0.10.0)
       activemodel (>= 3.2.0)
@@ -112,7 +116,6 @@ GEM
     multi_json (1.10.1)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
-    mysql2 (0.3.16)
     nested_form (0.3.2)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
@@ -147,6 +150,7 @@ GEM
       multi_json (~> 1.3)
       omniauth-oauth (~> 1.0)
     orm_adapter (0.5.0)
+    pg (0.17.1)
     polyglot (0.3.5)
     rabl (0.11.0)
       activesupport (>= 2.3.14)
@@ -217,6 +221,8 @@ DEPENDENCIES
   acts_as_votable (~> 0.10.0)
   angular-ui-bootstrap-rails
   angularjs-rails
+  autoprefixer-rails
+  bootstrap-sass (~> 3.2.0)
   carrierwave (~> 0.10.0)
   carrierwave-ffmpeg
   carrierwave-video
@@ -227,7 +233,6 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   mini_magick
-  mysql2
   nested_form
   non-stupid-digest-assets
   oj
@@ -235,6 +240,7 @@ DEPENDENCIES
   omniauth-facebook
   omniauth-linkedin
   omniauth-twitter
+  pg
   rabl
   rails (= 4.1.5)
   sass-rails (~> 4.0.3)

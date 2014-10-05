@@ -6,9 +6,16 @@ Rails.application.routes.draw do
 
 
   namespace :'api', defaults: {format: :json} do
+
     devise_scope :user do
-      resource :session, only: [:create, :destroy]
+      match '/sessions' => 'sessions#create', :via => :post
+      match '/sessions' => 'sessions#destroy', :via => :delete
     end
+
+    resources :users, only: [:create]
+    match '/users' => 'users#show', :via => :get
+    match '/users' => 'users#update', :via => :put
+    match '/users' => 'users#destroy', :via => :delete
 
     resources :categories
     resources :portfolios
@@ -39,7 +46,7 @@ Rails.application.routes.draw do
     end
   end
   # match 'blog' => "posts#index",      :as => :blog  , via: [:get, :post]
-# scope :api-old , defaults: { format: 'json' } do
+  # scope :api-old , defaults: { format: 'json' } do
   resources :themes
   devise_for :users, :controllers => {:omniauth_callbacks => "omniauth_callbacks", registrations: "registrations"}
 

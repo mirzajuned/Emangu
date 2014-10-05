@@ -1,0 +1,121 @@
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                        class="sr-only">Close</span></button>
+                <h3 class="modal-title" id="myModalLabel">Login or Sign-Up</h3>
+            </div>
+            <div class="modal-body modal_back">
+
+
+                <div class="col-md-12">
+                    <div class="p-t-30 p-l-40 p-b-20 xs-p-t-10 xs-p-l-10 xs-p-b-10 modal_text">
+                        <h2 class="normal">Sign in to eMangu</h2>
+
+                        <p>
+                            <button class="btn-facebook"><i class="fa fa-facebook"></i> | Facebook</button>
+                            <button class="btn-twitter"><i class="fa fa-twitter"></i> | Twitter</button>
+                            <button class="btn-google-plus"><i class="fa fa-google-plus"></i> | Google +</button>
+                            <br></p>
+
+                        <p class="p-b-20">Sign up Now! for eMangu accounts, Hey..it's free ..</p>
+
+                    </div>
+                    <div class=" p-t-20 p-b-20 text-black">
+
+                        <form id="frm_login" class="animated fadeIn">
+                            <div class="row form-row m-l-20 m-r-20 xs-m-l-10 xs-m-r-10">
+                                <div class="col-md-10">
+                                    <input name="login_username" id="login_username" type="text" class="form-control"
+                                           placeholder="Username">
+                                </div>
+                            </div><br>
+                            <div class="row form-row m-l-20 m-r-20 xs-m-l-10 xs-m-r-10">
+                                <div class="col-md-10">
+                                    <input name="login_pass" id="login_pass" type="password" class="form-control"
+                                           placeholder="Password">
+                                </div>
+                            </div><br>
+                            <div class="row form-row m-l-20 m-r-20 xs-m-l-10 xs-m-r-10">
+                                <div class="col-md-10 button_margin">
+                                    <button type="button" class="btn btn-primary btn-cons">Login</button>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <button type="button" class="btn btn-info btn-cons" id="register_toggle"> Create
+                                        Account
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="row p-t-10 m-l-20 m-r-20 xs-m-l-10 xs-m-r-10">
+                                <div class="control-group  col-md-10">
+                                    <div class="checkbox checkbox check-success"><a href="#">Trouble login in?</a>&nbsp;&nbsp;
+                                        <input type="checkbox" id="checkbox1" value="1">
+                                        <label for="checkbox1">Keep me reminded </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+
+                        <form id="frm_register" class="animated fadeIn" style="display:none">
+
+                            <div class="row form-row m-l-20 m-r-20 xs-m-l-10 xs-m-r-10">
+                                <div class="col-md-10">
+                                    <input name="reg_username" id="reg_username" type="text" class="form-control"
+                                           placeholder="Username">
+                                </div>
+                            </div><br>
+                            <div class="row form-row m-l-20 m-r-20 xs-m-l-10 xs-m-r-10">
+                                <div class="col-md-10">
+                                    <input name="reg_mail" id="reg_mail" type="text" class="form-control"
+                                           placeholder="Email">
+                                </div>
+                            </div><br>
+                            <div class="row form-row m-l-20 m-r-20 xs-m-l-10 xs-m-r-10">
+                                <div class="col-md-10">
+                                    <input name="reg_pass" id="reg_pass" type="password" class="form-control"
+                                           placeholder="Password">
+                                </div>
+                            </div><br>
+
+                            <div class="row form-row m-l-20 m-r-20 xs-m-l-10 xs-m-r-10">
+                                <div class="col-md-10">
+                                    <input name="conf_pass" id="reg_pass1" type="password" class="form-control"
+                                           placeholder="Confirm Password">
+                                </div>
+                            </div><br>
+                            <div class="row form-row m-l-20 m-r-20 xs-m-l-10 xs-m-r-10">
+                                <div class="col-md-10 button_margin">
+                                    <button type="button" class="btn btn-info btn-cons">Create Account</button>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <button type="button" class="btn btn-primary btn-cons" id="login_toggle"> Login
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+    $(document).ready(function() {
+        $('#login_toggle').click(function(){
+            $('#frm_login').show();
+            $('#frm_register').hide();
+        })
+        $('#register_toggle').click(function(){
+            $('#frm_login').hide();
+            $('#frm_register').show();
+        })
+
+
+
+
+
+    });
+
+</script>

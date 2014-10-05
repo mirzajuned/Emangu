@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Emangu" ng-controller="AppCtrl">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= content_for?(:title) ? yield(:title) : "Emangu" %></title>
+    <%= favicon_link_tag 'favicon.png' %>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag "application", :media => "all" %>
+
+    <%= javascript_include_tag "application" %>
+</head>
+<body>
+
+<div class="container-fluid">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="mlogo">
+                <image src="../images/logo.png" width="200px" height="50"></image>
+            </div>
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/#/about">About</a></li>
+                    <li><a href="/#/contact">Contact</a></li>
+                    <li><a href="/#/posts">Posts</a></li>
+                    <li><a href="/#/about">Category</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#myModal">Login/Sign
+                        <up></up>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div ng-include="'user/form.html'"></div>
+
+
+<div ng-view ng-bind-html></div>
+<!-- /container -->
+<div class="footer_container">
+    <div class="footer_inner">
+        <div class="footer_text">
+            <image src="../images/footer_logo.png" ></image>
+        </div>
+        <div class="footer_text">
+            #318,16th Cross, 5th Phase<br/>
+            Bangalore - 560078<br/>
+            India
+            08040943507<br/>
+            support@eMangu.com
+        </div>
+        <div class="footer_text">
+            <div class="sitemap">Sitemap</div>
+            <div class="sitemap_list1">
+                <div class="feature_website">Free website builder</div>
+
+
+            </div>
+
+        </div>
+        <div class="footer_text" style="font-weight: bold">
+            Sitemap
+
+        </div>
+        <div class="footer_text">
+            <font style="font-weight: bold">RECRUITMENT</font><br/>
+
+            We are frequently on the lookout for new talent!
+        </div>
+        <div class="footer_text">
+            <div class="social">FOLLOWS US</div>
+            <image src="../images/social-media-gft.png"></image>
+        </div>
+    </div>
+
+
+</div>
+<div class="panel-footer" align="center">Copyright @2014 Emangu. All rights reserved.</div>
+
+
+<%= javascript_include_tag "application" %>
+</body>
+</html>

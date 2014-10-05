@@ -1,10 +1,11 @@
 class Api::PostsController < ApplicationController
-  before_action :set_post, only: [:show, :edit, :published, :unpublished, :update, :destroy,:like, :dislike, :user_profile]
-  before_action :authenticate_user!, :except =>[:index, :show, :user_profile]
+  before_action :set_post, only: [:show, :edit, :published, :unpublished, :update, :destroy, :like, :dislike, :user_profile]
+  before_action :authenticate_user!, :except => [:index, :show, :user_profile]
   respond_to :json
   # GET /posts
   def index
     @posts = Post.published
+    render json: @posts
   end
 
   # GET /posts/1
@@ -19,7 +20,7 @@ class Api::PostsController < ApplicationController
   # GET /posts/1/edit
   def edit
     @resource = @tenant
-      render "posts/unauthorized_user", :status => 422  if !@post.users_post(current_user)
+    render "posts/unauthorized_user", :status => 422 if !@post.users_post(current_user)
   end
 
   # POST /posts
@@ -58,7 +59,7 @@ class Api::PostsController < ApplicationController
       redirect_to blog_posts_posts_path, notice: 'Post was successfully published.'
     else
       # redirect_to @post, notice: 'Not an authorized user' 
-       render "posts/unauthorized_user", :status => 422
+      render "posts/unauthorized_user", :status => 422
     end
   end
 
@@ -67,7 +68,7 @@ class Api::PostsController < ApplicationController
       @post.unpublish!
       redirect_to blog_posts_posts_path, notice: 'Post was successfully unpublished.'
     else
-      redirect_to @post, notice: 'Not an authorized user' 
+      redirect_to @post, notice: 'Not an authorized user'
     end
   end
 
@@ -76,27 +77,27 @@ class Api::PostsController < ApplicationController
     if @post.vote_registered?
       redirect_to @post, notice: 'successfully liked the post'
     else
-      redirect_to @post, notice: 'already liked the post' 
+      redirect_to @post, notice: 'already liked the post'
     end
   end
 
   def dislike
     @post.unliked_by current_user
-    redirect_to @post, notice: 'successfully disliked the post' 
+    redirect_to @post, notice: 'successfully disliked the post'
   end
 
   def user_profile
     @post = @post
   end
-  
-  private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_post
-      @post = Post.find(params[:id])
-    end
 
-    # Only allow a trusted parameter "white list" through.
-    def post_params
-      params.require(:post).permit(:title, :body, :published_at)
-    end
+  private
+  # Use callbacks to share common setup or constraints between actions.
+  def set_post
+    @post = Post.find(params[:id])
+  end
+
+  # Only allow a trusted parameter "white list" through.
+  def post_params
+    params.require(:post).permit(:title, :body, :published_at)
+  end
 end

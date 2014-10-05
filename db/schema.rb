@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20140923091728) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "applicants", force: true do |t|
     t.string   "name"
     t.string   "email"
@@ -119,6 +122,7 @@ ActiveRecord::Schema.define(version: 20140923091728) do
     t.string   "email",                  default: "", null: false
     t.string   "subdomain",              default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
+    t.string   "authentication_token"
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"

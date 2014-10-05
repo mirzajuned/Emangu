@@ -1,0 +1,1152 @@
+// Place all the styles related to the Applicants controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.navbar-inverse {
+  background: #211947;
+  border-bottom-color: #ffffff;
+  border-bottom: 1px solid #676767;
+  box-shadow: 0 1px 2px #999;
+  color: #ffffff;
+}
+
+.header_bnner {
+  background: url("../images/stripes-dark.png") repeat scroll center bottom rgba(0, 0, 0, 0);
+  height: 150px;
+  width: 100%;
+}
+
+.small_container {
+  background: url("../images/slideshow-gradient.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+  min-height: 140px;
+  padding: 0 15px;
+  position: relative;
+  z-index: 101;
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.small_container_text {
+  float: left;
+  width: 100%;
+  color: white;
+  font-size: 32px;
+  margin: 0;
+  padding-top: 35px;
+  z-index: 1000 !important;
+}
+
+.small_container_text_small {
+  color: #cce2ed;
+  font-size: 11px;
+  font-weight: normal;
+  margin: 1em 0 0;
+  padding-bottom: 30px;
+  z-index: 1000 !important;
+}
+
+.well-sm {
+  float: left;
+  width: 280px;
+  background-color: #201a47;
+  height: 204px;
+  margin-right: 30px;
+}
+
+.feature_body {
+  background: url("../images/slideshow-gradient.png") repeat-x scroll 0 -162px transparent;
+  margin: 0 auto;
+  min-height: 600px;
+  padding: 15px;
+  position: relative;
+  width: 960px;
+  z-index: 101;
+}
+
+.feature_box {
+  float: left;
+  width: 290px;
+  margin-left: 10px;
+}
+
+.feature_box1 {
+  float: left;
+  width: 290px;
+  margin-left: 30px;
+}
+
+.feature_box2 {
+  float: left;
+  width: 270px;
+  margin-left: 30px;
+}
+
+.feature_image {
+  float: left;
+  margin-top: 50px;
+  margin-left: 80px;
+}
+
+#onMouseIn {
+  float: left;
+  width: 280px;
+  height: 210px;
+  background-color: #084769;
+  margin-left: -10px;
+  margin-top: -10px;
+  color: #ffffff
+}
+
+.feature_text {
+  float: left;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.user_friendly {
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.feature_text1 {
+  float: left;
+  width: 90%;
+  margin-left: 10px;
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.well-lg {
+  loat: left;
+  width: 280px;
+  background-color: #ff5500;
+  height: 204px;
+}
+
+.link_arrow {
+  float: right;
+  color: #ffffff;
+  font-size: 24px;
+  margin-right: 10px
+}
+
+.create_your {
+  color: #ffffff;
+  font-size: 28px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+#foo {
+  float: left;
+}
+
+.feature_box12 {
+  float: left;
+  width: 290px;
+  margin-left: 10px;
+}
+
+#onMouseIn1 {
+  float: left;
+  width: 280px;
+  height: 210px;
+  background-color: #084769;
+  margin-left: -10px;
+  margin-top: -10px;
+  color: #ffffff
+}
+
+#onMouseIn2 {
+  float: left;
+  width: 280px;
+  height: 210px;
+  background-color: #084769;
+  margin-left: -10px;
+  margin-top: -10px;
+  color: #ffffff
+}
+
+#onMouseIn3 {
+  float: left;
+  width: 280px;
+  height: 210px;
+  background-color: #084769;
+  margin-left: -10px;
+  margin-top: -10px;
+  color: #ffffff
+}
+
+.onMouseIn4 {
+  float: left;
+  width: 280px;
+  height: 210px;
+  background-color: #084769;
+  margin-left: -10px;
+  margin-top: -10px;
+  color: #ffffff
+}
+
+.onMouseIn5 {
+  float: left;
+  width: 280px;
+  height: 210px;
+  background-color: #084769;
+  margin-left: -10px;
+  margin-top: -10px;
+  color: #ffffff
+}
+
+.onMouseIn6 {
+  float: left;
+  width: 280px;
+  height: 210px;
+  background-color: #084769;
+  margin-left: -10px;
+  margin-top: -10px;
+  color: #ffffff
+}
+
+.onMouseIn7 {
+  float: left;
+  width: 280px;
+  height: 210px;
+  background-color: #084769;
+  margin-left: -10px;
+  margin-top: -10px;
+  color: #ffffff
+}
+
+.onMouseIn8 {
+  float: left;
+  width: 280px;
+  height: 210px;
+  background-color: #084769;
+  margin-left: -10px;
+  margin-top: -10px;
+  color: #ffffff
+}
+
+.onMouseIn9 {
+  float: left;
+  width: 280px;
+  height: 210px;
+  background-color: #084769;
+  margin-left: -10px;
+  margin-top: -10px;
+  color: #ffffff
+}
+
+.onMouseIn10 {
+  float: left;
+  width: 280px;
+  height: 210px;
+  background-color: #084769;
+  margin-left: -10px;
+  margin-top: -10px;
+  color: #ffffff
+}
+
+.border_big {
+  float: left;
+  width: 100%;
+  background-color: blue;
+  height: 70px;
+}
+
+.small_container_text18 {
+  float: left;
+  width: 100%;
+  color: white;
+  font-size: 32px;
+  margin: 0;
+  padding-top: 10px;
+  z-index: 1000 !important;
+  margin-left: 300px;
+}
+
+.border_big1 {
+  float: left;
+  width: 100%;
+  background-color: blue;
+  height: 70px;
+  margin-top: 150px;
+}
+
+.dropdown1 {
+  float: left;
+}
+
+.drol_left {
+  float: left;
+  width: 900px;
+  background-color: rosybrown
+}
+
+.carousel-indicators {
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+  left: 28%;
+}
+
+.carousel-indicators li {
+  margin: 1px;
+  width: 150px;
+  height: 140px;
+  color: black;
+  text-indent: 0px;
+  margin-top: 70px;
+  border-radius: 0px;
+  background-color: #ffffff;
+  padding: 10px;
+  margin-left: 7px;
+}
+
+.carousel-indicators .active {
+  line-height: 55px;
+  padding: 10px;
+  width: 210px;
+  height: 160px;
+  color: #ffffff;
+  background-color: #211947;
+  border: none;
+}
+
+.carousel-indicators ul, ol {
+  margin-bottom: -20px;
+
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #ffffff
+}
+
+.carousel-indicators ol {
+  width: 1000px;
+}
+
+.carousel-caption p {
+
+  color: black;
+
+  text-align: left;
+}
+
+.carousel-caption {
+  left: 0px;
+  right: 0px;
+}
+
+.feature_container {
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.feature_heading {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.build {
+  float: left;
+  margin-left: 413px;
+  font-size: 13px;
+  font-weight: bold
+}
+
+.build1 {
+  text-align: content;
+  font-size: 13px;
+  font-weight: bold
+}
+
+.build2 {
+  float: right;
+  margin-right: 250px;
+  font-size: 13px;
+  font-weight: bold
+}
+
+.feature_detail {
+  float: left;
+  width: 282px;
+  margin-right: 20px;
+  margin-left: 55px;
+  margin-top: 20px;
+}
+
+.user_image {
+  float: left;
+  width: 50px;
+}
+
+.user_friendly_heading {
+  float: left;
+  width: 122px;
+  font-weight: bold;
+  font-size: 14px;
+  color: black;
+  margin-top: 10px;
+}
+
+.user_friendly_text {
+  float: left;
+  width: 210px;
+  text-align: justify;
+  font-size: 12px;
+}
+
+.footer_container {
+  float: left;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.template_container {
+  float: left;
+  width: 100%;
+}
+
+.template_heading {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px
+}
+
+.navbar-btn {
+  background-color: #ffffff;
+}
+
+.footer_inner {
+  float: left;
+  margin-left: 20px;
+  width: 1268px;
+  height: 112px;
+}
+
+.footer_text {
+  float: left;
+  width: 190px;
+  background-color: #ffffff;
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.social {
+  float: left;
+  margin-top: 5px;
+}
+
+.mlogo {
+  float: left;
+  width: 100px;
+  height: 50px;
+}
+
+.about_all {
+  float: left;
+  background-color: blue;
+  width: 100%;
+  height: 100px;
+}
+
+.btn-cons {
+  background-color: #ffffff;
+  color: black
+}
+
+.sitemap {
+  float: left;
+  font-weight: bold
+}
+
+.sitemap_list {
+  float: left
+}
+
+.sitemap_list {
+  float: left
+}
+
+.sitemap_list ul {
+  float: left;
+  text-decoration: none
+}
+
+.sitemap_list li {
+  float: left;
+  text-decoration: none
+}
+
+.sitemap_list ul li a {
+  float: left;
+  text-decoration: none;
+  color: black
+}
+
+.modal .modal-body {
+  max-height: 800px;
+  overflow-y: auto;
+
+}
+
+div.modal_back {
+  background-color: white;
+  margin-left: 55px;
+}
+
+div.modal_text {
+  margin-left: 20px;
+}
+
+div.button_margin {
+  margin-left: 30px;
+}
+
+/*! http://responsiveslides.com v1.53 by @viljamis */
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  z-index: -999;
+}
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  border: 0;
+  width: 100%;
+
+}
+
+.slider-container {
+  top: 155px;
+  position: absolute;
+  width: 590px;
+  left: 345px;
+  height: 325px;
+}
+
+.panel-footer {
+  float: left;
+  width: 100%;
+  background-color: #211947;
+  color: #ffffff
+}
+
+.panel-body {
+  float: left;
+  width: 100%;
+  background-color: #211947;
+  color: #ffffff
+}
+
+/*
+* 	Owl Carousel Owl Demo Theme
+*	v1.24
+*/
+#owl-demo .item {
+  margin: 3px;
+}
+
+#owl-demo .item img {
+  display: block;
+  height: auto;
+}
+
+.owl-theme .owl-controls {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Styling Next and Prev buttons */
+
+.owl-theme .owl-controls .owl-buttons div {
+  color: #FFF;
+  display: inline-block;
+  zoom: 1;
+  margin: 5px;
+  padding: 3px 10px;
+  font-size: 12px;
+  width: 70px;
+  height: 70px;
+}
+
+.owl-next {
+  background: url(../images/thumbs-pagination.png) no-repeat -80px 0px;
+  position: absolute;
+  right: -5px;
+  top: 30%;
+}
+
+.owl-prev {
+  background: url(../images/thumbs-pagination.png) no-repeat 0px 0px;
+  position: absolute;
+  left: -2px;
+  top: 30%;
+}
+
+div.item {
+  position: relative;
+}
+
+div.item label {
+  display: none;
+}
+
+div.item:hover label {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0%;
+  width: 229px;
+  background: rgba(46, 48, 65, 0.76);
+  color: #fff;
+  height: 190px;
+  text-align: center;
+  padding-top: 5.3em;
+}
+
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover {
+  filter: Alpha(Opacity=100); /*IE7 fix*/
+  opacity: 1;
+  text-decoration: none;
+}
+
+/* Styling Pagination*/
+
+.owl-theme .owl-controls .owl-page {
+  display: inline-block;
+  zoom: 1;
+  *display: inline; /*IE7 life-saver */
+}
+
+.owl-theme .owl-controls .owl-page span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  filter: Alpha(Opacity=50); /*IE7 fix*/
+  opacity: 0.5;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background: #FFF;
+}
+
+.owl-pagination {
+  position: absolute;
+  top: 120px;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+  filter: Alpha(Opacity=100); /*IE7 fix*/
+  opacity: 1;
+}
+
+/* If PaginationNumbers is true */
+
+.owl-theme .owl-controls .owl-page span.owl-numbers {
+  height: auto;
+  width: auto;
+  color: #FFF;
+  padding: 2px 10px;
+  font-size: 12px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+
+/* preloading images */
+.owl-item.loading {
+  min-height: 150px;
+  background: url(AjaxLoader.gif) no-repeat center center
+}
+
+/*
+ * 	Core Owl Carousel CSS File
+ *	v1.24
+ */
+
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* display none until init */
+.owl-carousel {
+  display: none;
+  position: relative;
+  -ms-touch-action: pan-y;
+  margin: 2em auto 2.5em;
+}
+
+.owl-carousel .owl-wrapper {
+  display: none;
+  position: relative;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+
+.owl-carousel .owl-wrapper-outer {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.owl-carousel .owl-wrapper-outer.autoHeight {
+  -webkit-transition: height 500ms ease-in-out;
+  -moz-transition: height 500ms ease-in-out;
+  -ms-transition: height 500ms ease-in-out;
+  -o-transition: height 500ms ease-in-out;
+  transition: height 500ms ease-in-out;
+}
+
+.owl-carousel .owl-item {
+  float: left;
+}
+
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div {
+  cursor: pointer;
+}
+
+.owl-controls {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* mouse grab icon */
+.grabbing {
+  cursor: url(grabbing.png) 8 8, move;
+}
+
+/* fix */
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+}
+
+/* CSS3 Transitions */
+
+.owl-origin {
+  -webkit-perspective: 1200px;
+  -webkit-perspective-origin-x: 50%;
+  -webkit-perspective-origin-y: 50%;
+  -moz-perspective: 1200px;
+  -moz-perspective-origin-x: 50%;
+  -moz-perspective-origin-y: 50%;
+  perspective: 1200px;
+}
+
+/* fade */
+.owl-fade-out {
+  z-index: 10;
+  -webkit-animation: fadeOut .7s both ease;
+  -moz-animation: fadeOut .7s both ease;
+  animation: fadeOut .7s both ease;
+}
+
+.owl-fade-in {
+  -webkit-animation: fadeIn .7s both ease;
+  -moz-animation: fadeIn .7s both ease;
+  animation: fadeIn .7s both ease;
+}
+
+/* backSlide */
+.owl-backSlide-out {
+  -webkit-animation: backSlideOut 1s both ease;
+  -moz-animation: backSlideOut 1s both ease;
+  animation: backSlideOut 1s both ease;
+}
+
+.owl-backSlide-in {
+  -webkit-animation: backSlideIn 1s both ease;
+  -moz-animation: backSlideIn 1s both ease;
+  animation: backSlideIn 1s both ease;
+}
+
+/* goDown */
+.owl-goDown-out {
+  -webkit-animation: scaleToFade .7s ease both;
+  -moz-animation: scaleToFade .7s ease both;
+  animation: scaleToFade .7s ease both;
+}
+
+.owl-goDown-in {
+  -webkit-animation: goDown .6s ease both;
+  -moz-animation: goDown .6s ease both;
+  animation: goDown .6s ease both;
+}
+
+/* scaleUp */
+.owl-fadeUp-in {
+  -webkit-animation: scaleUpFrom .5s ease both;
+  -moz-animation: scaleUpFrom .5s ease both;
+  animation: scaleUpFrom .5s ease both;
+}
+
+.owl-fadeUp-out {
+  -webkit-animation: scaleUpTo .5s ease both;
+  -moz-animation: scaleUpTo .5s ease both;
+  animation: scaleUpTo .5s ease both;
+}
+
+/* Keyframes */
+/*empty*/
+@-webkit-keyframes empty {
+  0% {
+    opacity: 1
+  }
+}
+
+@-moz-keyframes empty {
+  0% {
+    opacity: 1
+  }
+}
+
+@keyframes empty {
+  0% {
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes backSlideOut {
+  25% {
+    opacity: .5;
+    -webkit-transform: translateZ(-500px);
+  }
+  75% {
+    opacity: .5;
+    -webkit-transform: translateZ(-500px) translateX(-200%);
+  }
+  100% {
+    opacity: .5;
+    -webkit-transform: translateZ(-500px) translateX(-200%);
+  }
+}
+
+@-moz-keyframes backSlideOut {
+  25% {
+    opacity: .5;
+    -moz-transform: translateZ(-500px);
+  }
+  75% {
+    opacity: .5;
+    -moz-transform: translateZ(-500px) translateX(-200%);
+  }
+  100% {
+    opacity: .5;
+    -moz-transform: translateZ(-500px) translateX(-200%);
+  }
+}
+
+@keyframes backSlideOut {
+  25% {
+    opacity: .5;
+    transform: translateZ(-500px);
+  }
+  75% {
+    opacity: .5;
+    transform: translateZ(-500px) translateX(-200%);
+  }
+  100% {
+    opacity: .5;
+    transform: translateZ(-500px) translateX(-200%);
+  }
+}
+
+@-webkit-keyframes backSlideIn {
+  0%, 25% {
+    opacity: .5;
+    -webkit-transform: translateZ(-500px) translateX(200%);
+  }
+  75% {
+    opacity: .5;
+    -webkit-transform: translateZ(-500px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateZ(0) translateX(0);
+  }
+}
+
+@-moz-keyframes backSlideIn {
+  0%, 25% {
+    opacity: .5;
+    -moz-transform: translateZ(-500px) translateX(200%);
+  }
+  75% {
+    opacity: .5;
+    -moz-transform: translateZ(-500px);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateZ(0) translateX(0);
+  }
+}
+
+@keyframes backSlideIn {
+  0%, 25% {
+    opacity: .5;
+    transform: translateZ(-500px) translateX(200%);
+  }
+  75% {
+    opacity: .5;
+    transform: translateZ(-500px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateZ(0) translateX(0);
+  }
+}
+
+@-webkit-keyframes scaleToFade {
+  to {
+    opacity: 0;
+    -webkit-transform: scale(.8);
+  }
+}
+
+@-moz-keyframes scaleToFade {
+  to {
+    opacity: 0;
+    -moz-transform: scale(.8);
+  }
+}
+
+@keyframes scaleToFade {
+  to {
+    opacity: 0;
+    transform: scale(.8);
+  }
+}
+
+@-webkit-keyframes goDown {
+  from {
+    -webkit-transform: translateY(-100%);
+  }
+}
+
+@-moz-keyframes goDown {
+  from {
+    -moz-transform: translateY(-100%);
+  }
+}
+
+@keyframes goDown {
+  from {
+    transform: translateY(-100%);
+  }
+}
+
+@-webkit-keyframes scaleUpFrom {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(1.5);
+  }
+}
+
+@-moz-keyframes scaleUpFrom {
+  from {
+    opacity: 0;
+    -moz-transform: scale(1.5);
+  }
+}
+
+@keyframes scaleUpFrom {
+  from {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
+
+@-webkit-keyframes scaleUpTo {
+  to {
+    opacity: 0;
+    -webkit-transform: scale(1.5);
+  }
+}
+
+@-moz-keyframes scaleUpTo {
+  to {
+    opacity: 0;
+    -moz-transform: scale(1.5);
+  }
+}
+
+@keyframes scaleUpTo {
+  to {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
+
+/*----responsive-mediaquries-----*/
+@media (max-width: 1024px) {
+  #owl-demo .item img {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  #owl-demo .item img {
+    width: inherit;
+  }
+}
+
+@media (max-width: 640px) {
+  #owl-demo .item img {
+    width: inherit;
+  }
+}
+
+@media (max-width: 480px) {
+  #owl-demo .item img {
+    width: inherit;
+  }
+}
+
+@media (max-width: 320px) {
+  #owl-demo .item img {
+    width: 100%;
+  }
+  .owl-pagination {
+    position: absolute;
+    top: 330px;
+  }
+  div.item:hover label {
+    width: 268px;
+    height: 215px;
+  }
+}
+
+.small1 {
+  float: left;
+  width: 100%;
+}
+
+.feature_website {
+  float: left;
+  width: 100%;
+}
+
+.sitemap_list1 {
+  float: left;
+  width: 100%;
+  font-weight: bold
+}
+
+.about_project {
+  float: left;
+  width: 100%;
+  background-color: #211947;
+  height: 50px;
+}
+
+.about_project_text {
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 10px;
+}
