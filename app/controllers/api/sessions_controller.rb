@@ -1,5 +1,5 @@
 class Api::SessionsController < Devise::SessionsController
-  after_filter :set_csrf_headers, only: [:create, :destroy]
+  #after_filter :set_csrf_headers, only: [:create, :destroy]
   before_action :warden_authenticate
 
   def create

@@ -13,7 +13,6 @@
     <%= javascript_include_tag "application" %>
 </head>
 <body>
-
 <div class="container-fluid">
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -34,24 +33,34 @@
                     <li><a href="/#/contact">Contact</a></li>
                     <li><a href="/#/posts">Posts</a></li>
                     <li><a href="/#/about">Category</a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#myModal">Login/Sign
-                        <up></up>
-                    </a></li>
-                </ul>
+                    <li>
+                        <% if current_user %>
+                            <a class="btn btn-primary" ng-click="logout()">Logout</a>
+                            Welcome:
+                            <p>Welcome, {{user.email}}</p>
+                            <%= current_user.username %>
+                        <% else %>
+                            <a href="/#/login">Login</a></li>
+                            <li><a href="/#/signup">Signup</a></li>
+                        <% end %>
+
+
+
+                        <!--<li><a href="#" data-toggle="modal" data-target="#myModal">Login/Sign-->
+                        <!--<up></up>-->
+                        <!--</a></li>-->
+                        </ul>
             </div>
         </div>
     </nav>
 </div>
 
-<div ng-include="'user/form.html'"></div>
+<div ng-view></div>
 
-
-<div ng-view ng-bind-html></div>
-<!-- /container -->
 <div class="footer_container">
     <div class="footer_inner">
         <div class="footer_text">
-            <image src="../images/footer_logo.png" ></image>
+            <image src="../images/footer_logo.png"></image>
         </div>
         <div class="footer_text">
             #318,16th Cross, 5th Phase<br/>
@@ -88,7 +97,7 @@
 </div>
 <div class="panel-footer" align="center">Copyright @2014 Emangu. All rights reserved.</div>
 
-
+<div ng-include="'user/form.html'"></div>
 <%= javascript_include_tag "application" %>
 </body>
 </html>

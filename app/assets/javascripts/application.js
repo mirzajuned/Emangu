@@ -15,7 +15,7 @@
 angular.module('Emangu', ['sessionService', 'recordService', '$strap.directives'])
     .config(['$httpProvider', function ($httpProvider) {
         $httpProvider.defaults.headers.common['X-CSRF-Token'] = $('meta[name=csrf-token]').attr('content');
-
+        alert( $httpProvider.defaults.headers.common['X-CSRF-Token']);
         var interceptor = ['$location', '$rootScope', '$q', function ($location, $rootScope, $q) {
             function success(response) {
                 return response
@@ -24,7 +24,7 @@ angular.module('Emangu', ['sessionService', 'recordService', '$strap.directives'
             function error(response) {
                 if (response.status == 401) {
                     $rootScope.$broadcast('event:unauthorized');
-                    $location.path('/users/login');
+                    $location.path('/login');
                     return response;
                 }
                 ;
@@ -42,5 +42,6 @@ angular.module('Emangu', ['sessionService', 'recordService', '$strap.directives'
             .when('/', {templateUrl: '/templates/index.html'})
             .when('/record', {templateUrl: '/templates/record/index.html', controller: RecordCtrl})
             .when('/login', {templateUrl: '/templates/users/login.html', controller: UsersCtrl})
-            .when('/signup', {templateUrl: '/templates/users/register.html', controller: UsersCtrl});
+            .when('/signup', {templateUrl: '/templates/users/register.html', controller: UsersCtrl})
+            .otherwise({redirectTo: '/login'});
     }]);
