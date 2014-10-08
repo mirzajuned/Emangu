@@ -15,7 +15,7 @@
 angular.module('Emangu', ['sessionService', 'recordService', '$strap.directives'])
     .config(['$httpProvider', function ($httpProvider) {
         $httpProvider.defaults.headers.common['X-CSRF-Token'] = $('meta[name=csrf-token]').attr('content');
-        alert( $httpProvider.defaults.headers.common['X-CSRF-Token']);
+
         var interceptor = ['$location', '$rootScope', '$q', function ($location, $rootScope, $q) {
             function success(response) {
                 return response

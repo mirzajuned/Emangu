@@ -58,37 +58,36 @@
                         </form>
 
 
-                        <form id="frm_register" class="animated fadeIn auth-form" style="display:none" name="registrationForm">
+                        <form id="frm_register" class="animated fadeIn" style="display:none">
 
                             <div class="row form-row m-l-20 m-r-20 xs-m-l-10 xs-m-r-10">
                                 <div class="col-md-10">
                                     <input name="reg_username" id="reg_username" type="text" class="form-control"
-                                           placeholder="Username" ng-model="user.username" required autofocus>
+                                           placeholder="Username">
                                 </div>
                             </div><br>
                             <div class="row form-row m-l-20 m-r-20 xs-m-l-10 xs-m-r-10">
                                 <div class="col-md-10">
                                     <input name="reg_mail" id="reg_mail" type="text" class="form-control"
-                                           placeholder="Email" ng-model="user.email" required autofocus>
+                                           placeholder="Email">
                                 </div>
                             </div><br>
                             <div class="row form-row m-l-20 m-r-20 xs-m-l-10 xs-m-r-10">
                                 <div class="col-md-10">
                                     <input name="reg_pass" id="reg_pass" type="password" class="form-control"
-                                           placeholder="Password" ng-model="user.password" required>
+                                           placeholder="Password">
                                 </div>
                             </div><br>
 
                             <div class="row form-row m-l-20 m-r-20 xs-m-l-10 xs-m-r-10">
                                 <div class="col-md-10">
                                     <input name="conf_pass" id="reg_pass1" type="password" class="form-control"
-                                           placeholder="Confirm Password" ng-model="user.confirm_password" required>
+                                           placeholder="Confirm Password">
                                 </div>
-
                             </div><br>
                             <div class="row form-row m-l-20 m-r-20 xs-m-l-10 xs-m-r-10">
                                 <div class="col-md-10 button_margin">
-                                    <a class="btn btn-large btn-primary" type="submit" ng-click="register(user)" ng-disabled="registrationForm.$invalid">Sign up</a>
+                                    <button type="button" class="btn btn-info btn-cons">Create Account</button>
                                     &nbsp;&nbsp;&nbsp;
                                     <button type="button" class="btn btn-primary btn-cons" id="login_toggle"> Login
                                     </button>
@@ -112,10 +111,6 @@
             $('#frm_login').hide();
             $('#frm_register').show();
         })
-
-
-
-
 
     });
 

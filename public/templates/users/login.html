@@ -1,31 +1,42 @@
-</br>
-</br>
-<div class="container">
-    <div style="text-align: center; min-height: 100%">
+<div class="container signup">
+    <div class="registation">
+
         <h1>Welcome Back!!!</h1>
 
-        <form name="loginForm" class="auth-form">
-            <h2 class="auth-form-heading">Please sign in</h2><br/>
-
-            <div class="alert alert-warning" ng-show="authReason">
-                {{authReason}}
+        <h1>Sign In</h1>
+        <form id="frm_login" class="animated fadeIn">
+            <div class="row form-row m-l-20 m-r-20 xs-m-l-10 xs-m-r-10">
+                <div class="col-md-10">
+                    <input name="login_username" id="login_username" type="text" class="form-control"
+                           placeholder="Username">
+                </div>
+            </div><br>
+            <div class="row form-row m-l-20 m-r-20 xs-m-l-10 xs-m-r-10">
+                <div class="col-md-10">
+                    <input name="login_pass" id="login_pass" type="password" class="form-control"
+                           placeholder="Password">
+                </div>
+            </div><br>
+            <div class="row form-row m-l-20 m-r-20 xs-m-l-10 xs-m-r-10">
+                <div class="col-md-10 button_margin">
+                    <button type="button" class="btn btn-primary btn-cons">Login</button>
+                    &nbsp;&nbsp;&nbsp;
+                    <button type="button" class="btn btn-info btn-cons" id="register_toggle"> Create
+                        Account
+                    </button>
+                </div>
             </div>
-            <div class="alert alert-error" ng-show="authError">
-                {{authError}}
-            </div>
 
-            <input type="text" class="input-block-level" placeholder="Email address" ng-model="user.email" required
-                   autofocus>
-            <input type="password" class="input-block-level" placeholder="Password" ng-model="user.password" required>
-            <label class="checkbox">
-                <input type="checkbox" value="remember-me"> Remember me
-            </label><br/>
-            <a class="btn btn-large btn-primary" type="submit" ng-click="login(user)" ng-disabled="loginForm.$invalid">Sign
-                in</a>
-            <a class="btn btn-link" href="#/users/register">Register</a>
+            <div class="row p-t-10 m-l-20 m-r-20 xs-m-l-10 xs-m-r-10">
+                <div class="control-group  col-md-10">
+                    <div class="checkbox checkbox check-success"><a href="#">Trouble login in?</a>&nbsp;&nbsp;
+                        <input type="checkbox" id="checkbox1" value="1">
+                        <label for="checkbox1">Keep me reminded </label>
+                    </div>
+                </div>
+            </div>
         </form>
-    </div>
-</div>
-</br>
 
-        <div style="width: 100%; height: 15px; background-color: #211947"></div>
+</div>
+</div>
+
