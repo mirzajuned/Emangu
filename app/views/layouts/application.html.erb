@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="Emangu">
 <head>
     <title>DeviceTest</title>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
+     <%= stylesheet_link_tag    "application", media: "all" %>
     <%= csrf_meta_tags %>
 </head>
 <body>
@@ -20,7 +21,7 @@
         <!--<li class="active"><a href="/categories">Categories</a></li>-->
 
     <!--</ul>-->
-    <div class="container">
+    <div  ng-view>
         <%= yield %>
     </div>
 

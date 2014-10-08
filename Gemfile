@@ -4,13 +4,10 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.5'
 # Use mysql as the database for Active Record
-#gem 'mysql2'
 gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
-gem 'bootstrap-sass', '~> 3.2.0'
 
-gem 'autoprefixer-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
@@ -21,7 +18,9 @@ gem 'coffee-rails', '~> 4.0.0'
 # Use Angular as javaScript library
 gem 'angularjs-rails'
 gem 'angular-ui-bootstrap-rails'
-
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'font-awesome-rails'
+gem 'autoprefixer-rails'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -67,4 +66,3 @@ gem 'mini_magick'
 gem 'fog', '~> 1.21.0'
 gem 'unf'
 gem 'acts_as_votable', '~> 0.10.0'
-gem 'font-awesome-rails'

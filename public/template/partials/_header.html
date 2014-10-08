@@ -1,0 +1,127 @@
+<div class="container-fluid">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="mlogo">
+                <image src="../images/mlogo.png"></image>
+            </div>
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="#/contact">Contact</a></li>
+                    <li><a href="#">Posts</a></li>
+                    <li><a href="#/about">Category</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#myModal">Login</a></li>
+                </ul>
+
+
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+  <div class="modal-dialog">
+    <div class="modal-content" style="padding-bottom:20px;">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h3 class="modal-title" id="myModalLabel">Login or Sign-Up</h3>
+      </div>
+
+      <div class="modal-body"> 
+
+          <div class="row"> 
+            <div class="col-md-2"></div>
+              <p>Sign-in Now! for Emangu,</p>
+              <div class="col-md-2"></div>
+              
+              <p><button class="btn-facebook"><i class="fa fa-facebook"></i> | Facebook</button> <button class="btn-twitter"><i class="fa fa-twitter"></i> | Twitter</button>  
+          <button class="btn-google-plus"><i class="fa fa-google-plus"></i> | Google +</button><br></p>
+          <div class="col-md-2"></div>
+          it's free and always will be..</p>
+            </div>
+          </div>
+
+            
+        <form role="form" id="form_login"> 
+          <div class="row"> 
+            <div class="col-md-2"></div>         
+            <div class="form-group col-md-8">
+              <input type="text" class="form-control" placeholder="Enter Email-id">
+            </div>
+          </div>
+          <div class="row">    
+            <div class="col-md-2"></div>       
+            <div class="form-group col-md-8">
+              <input type="password" class="form-control" placeholder="Enter Password">
+            </div>
+          </div>
+          <div class="col-md-4"></div> 
+          <button type="button" class="btn btn-primary" id="login_toggle">Login</button>
+          <button type="button" class="btn btn-success"id="register_toggle">Create New Account</button>
+          <br>
+          <div class="col-md-2"></div>  
+          <a href>Trouble login ?</a>
+        </form>
+
+        <form role="form" style="display:none" id="form_register"> 
+          <div class="row"> 
+            <div class="col-md-2"></div>          
+            <div class="form-group col-md-8">
+              <input type="text" class="form-control" placeholder="Enter Name">
+            </div>
+          </div>
+          <div class="row"> 
+            <div class="col-md-2"></div>          
+            <div class="form-group col-md-8">
+              <input type="text" class="form-control" placeholder="Enter Email-id">
+            </div>
+          </div>
+          <div class="row"> 
+            <div class="col-md-2"></div>          
+            <div class="form-group col-md-8">
+              <input type="text" class="form-control" placeholder="Confirm Email-id">
+            </div>
+          </div>
+          <div class="row"> 
+            <div class="col-md-2"></div>          
+            <div class="form-group col-md-8">
+              <input type="password" class="form-control" placeholder="Enter Password">
+            </div>
+          </div>
+          <div class="col-md-4"></div> 
+          <button type="button" class="btn btn-primary" id="login_toggle1">Login</button>
+          <button type="button" class="btn btn-success" id="register_toggle">Create New Account</button>
+        </form>
+
+      </div>
+
+
+    </div>
+  </div>
+</div>   
+<script type="text/javascript">
+  $(document).ready(function() {    
+  $('#login_toggle1').click(function(){
+    $('#form_login').show();
+    $('#form_register').hide();
+  })
+  $('#register_toggle').click(function(){
+    $('#form_login').hide();
+    $('#form_register').show();
+  })
+});  
+  
+</script>
+
+
+
+
+
